@@ -41,6 +41,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.11.6"],
             ["@babel/preset-env", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.11.5"],
             ["@babel/preset-react", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.10.4"],
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.32"],
+            ["@fortawesome/free-solid-svg-icons", "npm:5.15.1"],
+            ["@fortawesome/react-fontawesome", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:0.1.11"],
             ["babel-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:8.1.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["react", "npm:16.13.1"],
@@ -1717,6 +1720,55 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-validator-identifier", "npm:7.10.4"],
             ["lodash", "npm:4.17.20"],
             ["to-fast-properties", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/fontawesome-common-types", [
+        ["npm:0.2.32", {
+          "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-common-types-npm-0.2.32-96a1d0f1ab/node_modules/@fortawesome/fontawesome-common-types/",
+          "packageDependencies": [
+            ["@fortawesome/fontawesome-common-types", "npm:0.2.32"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/fontawesome-svg-core", [
+        ["npm:1.2.32", {
+          "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-svg-core-npm-1.2.32-8dca04b772/node_modules/@fortawesome/fontawesome-svg-core/",
+          "packageDependencies": [
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.32"],
+            ["@fortawesome/fontawesome-common-types", "npm:0.2.32"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/free-solid-svg-icons", [
+        ["npm:5.15.1", {
+          "packageLocation": "./.yarn/unplugged/@fortawesome-free-solid-svg-icons-npm-5.15.1-455c8b56ac/node_modules/@fortawesome/free-solid-svg-icons/",
+          "packageDependencies": [
+            ["@fortawesome/free-solid-svg-icons", "npm:5.15.1"],
+            ["@fortawesome/fontawesome-common-types", "npm:0.2.32"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@fortawesome/react-fontawesome", [
+        ["virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:0.1.11", {
+          "packageLocation": "./.yarn/$$virtual/@fortawesome-react-fontawesome-virtual-1b51ddb093/0/cache/@fortawesome-react-fontawesome-npm-0.1.11-704411bd5c-ede137d0f7.zip/node_modules/@fortawesome/react-fontawesome/",
+          "packageDependencies": [
+            ["@fortawesome/react-fontawesome", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:0.1.11"],
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.32"],
+            ["@types/fortawesome__fontawesome-svg-core", null],
+            ["@types/react", null],
+            ["prop-types", "npm:15.7.2"],
+            ["react", "npm:16.13.1"]
+          ],
+          "packagePeers": [
+            "@fortawesome/fontawesome-svg-core",
+            "@types/fortawesome__fontawesome-svg-core",
+            "@types/react",
+            "react"
           ],
           "linkType": "HARD",
         }]
@@ -3996,6 +4048,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.11.6"],
             ["@babel/preset-env", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.11.5"],
             ["@babel/preset-react", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.10.4"],
+            ["@fortawesome/fontawesome-svg-core", "npm:1.2.32"],
+            ["@fortawesome/free-solid-svg-icons", "npm:5.15.1"],
+            ["@fortawesome/react-fontawesome", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:0.1.11"],
             ["babel-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:8.1.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["react", "npm:16.13.1"],
