@@ -1,4 +1,5 @@
 const path = require("path");
+const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
 
 module.exports = {
   entry: "./src/index.js",
@@ -12,7 +13,15 @@ module.exports = {
       },
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+    plugins: [ PnpWebpackPlugin ],
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module),
+    ],
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
