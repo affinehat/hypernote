@@ -1,5 +1,7 @@
 const path = require("path");
+const webpack = require('webpack');
 const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -26,6 +28,10 @@ module.exports = {
       },
     ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin(),
+  ],
   resolve: {
     extensions: ["*", ".js", ".jsx"],
     plugins: [ PnpWebpackPlugin ],
