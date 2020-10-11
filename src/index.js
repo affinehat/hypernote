@@ -1,7 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './App.js'
+import store from './store'
+import { Provider } from 'react-redux'
+import './css/tailwind.css'
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('react-root')
 )
