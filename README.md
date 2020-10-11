@@ -1,5 +1,4 @@
-License
-=========
+# License
 
 Any file in this repository that does not state otherwise is part of hypernote.
 
