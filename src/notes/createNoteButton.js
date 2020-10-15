@@ -6,14 +6,14 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 import { createNote } from 'notes/notesSlice'
 
 export const CreateNoteButton = props => {
-  let { createNote, ...otherProps } = props
-  let createNoteDefault = () => createNote('New Note')
+  let { createNote, at, ...otherProps } = props
+  let createNoteAt = () => createNote({text: 'New Note', parent: at })
 
   return (
     <FontAwesomeIcon
       {...otherProps}
       icon={faPlusCircle}
-      onClick={createNoteDefault}
+      onClick={createNoteAt}
     />
   )
 }

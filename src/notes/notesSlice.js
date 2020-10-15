@@ -5,10 +5,16 @@ const namespace = 'notes'
 
 const notesSlice = createSlice({
   name: namespace,
-  initialState: [],
+  initialState: {},
   reducers: {
-    createNote: (state, action) => void (state.push({id: v4(), text: action.payload})),
-    deleteNote: (state, action) => void (state.splice(action.payload, 1)),
+    createNote: (state, action) => {
+      const id = v4()
+      state[id] = {
+        id,
+        ...action.payload
+      }
+    },
+    deleteNote: (state, action) => void (delete state[action.payload]),
   },
 })
 

@@ -14,8 +14,8 @@ export const NotesList = props => {
           <React.Fragment key={n.id}>
             <Note>{n.text}</Note>
               {/* renders in reverse order */}
-            <CreateNoteButton pull="right"></CreateNoteButton>
-            <DeleteNoteButton pull="right" index={1}></DeleteNoteButton>
+            <CreateNoteButton at={n.id} pull="right"></CreateNoteButton>
+            <DeleteNoteButton at={n.id} pull="right"></DeleteNoteButton>
           </React.Fragment>
         ))}
       </List>
@@ -27,7 +27,7 @@ export const NotesList = props => {
 
 
 const mapState = state => ({
-  notes: state.notes
+  notes: Object.values(state.notes)
 })
 
 export default connect(mapState)(NotesList)

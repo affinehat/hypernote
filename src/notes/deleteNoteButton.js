@@ -6,8 +6,8 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { deleteNote } from 'notes/notesSlice'
 
 export const DeleteNoteButton = props => {
-  let { deleteNote, index, ...otherProps } = props
-  let deleteNoteAt = () => deleteNote(index)
+  let { deleteNote, at, ...otherProps } = props
+  let deleteNoteAt = () => deleteNote(at)
 
   return (
     <FontAwesomeIcon
