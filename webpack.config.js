@@ -46,6 +46,7 @@ module.exports = {
     publicPath: '/assets/',
     filename: 'bundle.js',
   },
+  devtool: 'eval-source-map',
   devServer: {
     port: 3000,
     contentBase: path.resolve(__dirname, 'public'),
