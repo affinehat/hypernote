@@ -1,16 +1,12 @@
-import React, { Component } from 'react'
-import Note from 'notes/note'
+import React from 'react'
+import NotesList from 'notes/noteslist'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <ul>
-          <Note text="hello world" />
-        </ul>
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div>
+      <NotesList />
+    </div>
+  )
 }
 
 export default App
