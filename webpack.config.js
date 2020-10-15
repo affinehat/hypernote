@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const PnpWebpackPlugin = require('pnp-webpack-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
+const root = path.resolve(__dirname)
 
 module.exports = {
   entry: './src/index.js',
@@ -35,6 +36,10 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
     plugins: [ PnpWebpackPlugin ],
+    alias: {
+      notes: `${root}/src/notes`,
+      components: `${root}/src/components`,
+    },
   },
   resolveLoader: {
     plugins: [
