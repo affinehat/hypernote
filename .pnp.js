@@ -57,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-redux", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
             ["react-refresh", "npm:0.8.3"],
             ["redux", "npm:4.0.5"],
+            ["rxjs", "npm:6.6.3"],
             ["style-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:1.3.0"],
             ["tailwindcss", "npm:1.8.12"],
             ["webpack", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.44.2"],
@@ -5124,6 +5125,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-redux", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
             ["react-refresh", "npm:0.8.3"],
             ["redux", "npm:4.0.5"],
+            ["rxjs", "npm:6.6.3"],
             ["style-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:1.3.0"],
             ["tailwindcss", "npm:1.8.12"],
             ["webpack", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.44.2"],
@@ -7963,6 +7965,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["run-queue", "npm:1.0.3"],
             ["aproba", "npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["rxjs", [
+        ["npm:6.6.3", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-6.6.3-a1e67d677b-61a3da6db9.zip/node_modules/rxjs/",
+          "packageDependencies": [
+            ["rxjs", "npm:6.6.3"],
+            ["tslib", "npm:1.14.0"]
           ],
           "linkType": "HARD",
         }]
