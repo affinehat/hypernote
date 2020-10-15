@@ -1,10 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, createAction } from '@reduxjs/toolkit'
 
+const namespace = 'notes'
 
 const notesSlice = createSlice({
-  name: 'notes',
+  name: namespace,
   initialState: [],
-  reducers: {},
+  reducers: {
+    addNote: (state, action) => void (state.push({text: action.payload }))
+  },
 })
 
 export default notesSlice.reducer
+export const { addNote } = notesSlice.actions
