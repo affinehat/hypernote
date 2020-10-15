@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Note from 'notes/note'
-import AddNoteButton from 'notes/addNoteButton'
+import CreateNoteButton from 'notes/createNoteButton'
 import List from 'components/list'
 
 export const NotesList = props => {
@@ -12,12 +12,12 @@ export const NotesList = props => {
         {props.notes.map(n => (
           <>
             <Note>{n.text}</Note>
-            <AddNoteButton pull="right"></AddNoteButton>
+            <CreateNoteButton pull="right"></CreateNoteButton>
           </>
         ))}
       </List>
 
-      <AddNoteButton></AddNoteButton>
+      <CreateNoteButton></CreateNoteButton>
     </>
   )
 }
