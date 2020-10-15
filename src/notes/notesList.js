@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 
 import Note from 'notes/note'
 import CreateNoteButton from 'notes/createNoteButton'
+import DeleteNoteButton from 'notes/deleteNoteButton'
 import List from 'components/list'
 
 export const NotesList = props => {
@@ -12,7 +13,9 @@ export const NotesList = props => {
         {props.notes.map(n => (
           <>
             <Note>{n.text}</Note>
+              {/* renders in reverse order */}
             <CreateNoteButton pull="right"></CreateNoteButton>
+            <DeleteNoteButton pull="right" index={1}></DeleteNoteButton>
           </>
         ))}
       </List>

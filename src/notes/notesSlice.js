@@ -6,9 +6,10 @@ const notesSlice = createSlice({
   name: namespace,
   initialState: [],
   reducers: {
-    createNote: (state, action) => void (state.push({text: action.payload }))
+    createNote: (state, action) => void (state.push({text: action.payload })),
+    deleteNote: (state, action) => void (state.splice(action.payload, 1)),
   },
 })
 
 export default notesSlice.reducer
-export const { createNote } = notesSlice.actions
+export const { createNote, deleteNote } = notesSlice.actions
