@@ -33,6 +33,7 @@
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
     "rxjs": "^6.6.3",
-    "tailwindcss": "^1.8.12"
+    "tailwindcss": "^1.8.12",
+    "uuid": "^8.3.1"
   }
 }
