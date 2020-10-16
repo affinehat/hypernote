@@ -1,10 +1,16 @@
 import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+
 import NotesList from 'notes/noteslist'
 
 const App = () => {
   return (
     <div>
-      <NotesList />
+      <Switch>
+        <Route exact path="/">
+          <NotesList />
+        </Route>
+      </Switch>
     </div>
   )
 }
