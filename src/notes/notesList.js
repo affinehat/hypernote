@@ -12,7 +12,7 @@ export const NotesList = props => {
       <List>
         {props.notes.map(n => (
           <React.Fragment key={n.id}>
-            <Note>{n.text}</Note>
+            <Note>{n.title}</Note>
               {/* renders in reverse order */}
             <CreateNoteButton at={n.id} pull="right"></CreateNoteButton>
             <DeleteNoteButton at={n.id} pull="right"></DeleteNoteButton>

@@ -7,7 +7,7 @@ import { createNote } from 'notes/notesSlice'
 
 export const CreateNoteButton = props => {
   let { createNote, at, ...otherProps } = props
-  let createNoteAt = () => createNote({text: 'New Note', parent: at })
+  let createNoteAt = () => createNote({title: 'New Note', parent: at })
 
   return (
     <FontAwesomeIcon
