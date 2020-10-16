@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import Note from 'notes/note'
 import CreateNoteButton from 'notes/createNoteButton'
 import DeleteNoteButton from 'notes/deleteNoteButton'
+import EditNoteButton from 'notes/editNoteButton'
 import List from 'components/list'
 
 export const NotesList = props => {
@@ -15,6 +16,7 @@ export const NotesList = props => {
             <Note>{n.title}</Note>
               {/* renders in reverse order */}
             <CreateNoteButton at={n.id} pull="right"></CreateNoteButton>
+            <EditNoteButton at={n.id} pull="right"></EditNoteButton>
             <DeleteNoteButton at={n.id} pull="right"></DeleteNoteButton>
           </React.Fragment>
         ))}
