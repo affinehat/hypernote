@@ -2560,6 +2560,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"codemirror@npm:^5.58.1":
+  version: 5.58.1
+  resolution: "codemirror@npm:5.58.1"
+  checksum: 85d5a5dbe5f69441a93c8a8f0a423db35cba00a6358c3b7a98ee4b6773b2ed07e69662fadb6232d4834224c838cedea9aa365d62a41b17d8215e9dd1a03682bf
+  languageName: node
+  linkType: hard
+
 "collapse-white-space@npm:^1.0.2":
   version: 1.0.6
   resolution: "collapse-white-space@npm:1.0.6"
@@ -4409,11 +4416,13 @@ fsevents@~2.1.2:
     "@reduxjs/toolkit": ^1.4.0
     autoprefixer: ^10.0.1
     babel-loader: ^8.1.0
+    codemirror: ^5.58.1
     css-loader: ^4.3.0
     pnp-webpack-plugin: ^1.6.4
     postcss: ^8.1.1
     postcss-loader: ^4.0.3
     react: ^16.13.1
+    react-codemirror2: ^7.2.1
     react-dom: ^16.13.1
     react-markdown: ^4.3.1
     react-redux: ^7.2.1
@@ -6661,6 +6670,16 @@ fsevents@~2.1.2:
     iconv-lite: 0.4.24
     unpipe: 1.0.0
   checksum: 46dc02f8b4f358786d41e18fb55533fbe4702d390e22bbe2b9c98c88dec41cab23ea2315f3ae0bf4bc0213a2872c89943d3df6857f4e21f996ea9d2d92f1bcaa
+  languageName: node
+  linkType: hard
+
+"react-codemirror2@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "react-codemirror2@npm:7.2.1"
+  peerDependencies:
+    codemirror: 5.x
+    react: ">=15.5 <=16.x"
+  checksum: 84dee661fd692b1ab4a79c02d1d296c15d2ecf0eb1745a7425c92ea534d45fe67079292c120d998649d60d449ea2e907210963baaba4e830482da715d7094fd4
   languageName: node
   linkType: hard
 

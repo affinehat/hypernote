@@ -48,11 +48,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@reduxjs/toolkit", "npm:1.4.0"],
             ["autoprefixer", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:10.0.1"],
             ["babel-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:8.1.0"],
+            ["codemirror", "npm:5.58.1"],
             ["css-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.3.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["postcss", "npm:8.1.1"],
             ["postcss-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.0.3"],
             ["react", "npm:16.13.1"],
+            ["react-codemirror2", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
             ["react-dom", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:16.13.1"],
             ["react-markdown", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.3.1"],
             ["react-redux", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
@@ -3194,6 +3196,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["codemirror", [
+        ["npm:5.58.1", {
+          "packageLocation": "./.yarn/cache/codemirror-npm-5.58.1-b9bab9d3a5-85d5a5dbe5.zip/node_modules/codemirror/",
+          "packageDependencies": [
+            ["codemirror", "npm:5.58.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["collapse-white-space", [
         ["npm:1.0.6", {
           "packageLocation": "./.yarn/cache/collapse-white-space-npm-1.0.6-6fdbf5906f-beca17619b.zip/node_modules/collapse-white-space/",
@@ -5277,11 +5288,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@reduxjs/toolkit", "npm:1.4.0"],
             ["autoprefixer", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:10.0.1"],
             ["babel-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:8.1.0"],
+            ["codemirror", "npm:5.58.1"],
             ["css-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.3.0"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["postcss", "npm:8.1.1"],
             ["postcss-loader", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.0.3"],
             ["react", "npm:16.13.1"],
+            ["react-codemirror2", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
             ["react-dom", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:16.13.1"],
             ["react-markdown", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:4.3.1"],
             ["react-redux", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
@@ -7849,6 +7862,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
             ["prop-types", "npm:15.7.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-codemirror2", [
+        ["virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1", {
+          "packageLocation": "./.yarn/$$virtual/react-codemirror2-virtual-c3497b1a76/0/cache/react-codemirror2-npm-7.2.1-dcadbb9383-84dee661fd.zip/node_modules/react-codemirror2/",
+          "packageDependencies": [
+            ["react-codemirror2", "virtual:a4b411f927398be3c98df7f13f40498ad4e9a3eb64bcbec719e8342daa515f2b1f2e8248887d498b43284b5f27fb4fd5f95d4d2942969bb43846363b82cba7cf#npm:7.2.1"],
+            ["@types/codemirror", null],
+            ["@types/react", null],
+            ["codemirror", "npm:5.58.1"],
+            ["react", "npm:16.13.1"]
+          ],
+          "packagePeers": [
+            "@types/codemirror",
+            "@types/react",
+            "codemirror",
+            "react"
           ],
           "linkType": "HARD",
         }]
