@@ -7,6 +7,6 @@
                0px 0px 25px blue, 0px 0px 30px violet;
 }
 
-.cm-s-default {
+.CodeMirror {
   @apply min-h-screen;
 }

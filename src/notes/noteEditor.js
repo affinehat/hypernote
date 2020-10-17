@@ -46,6 +46,7 @@ export const NoteEditor = props => {
       <div id="editor-panel" className="border-4 border-red-300 rounded-lg">
         <CodeMirror className="min-h-screen w-full"
           value={text}
+          options={{theme: 'material' }}
           onBeforeChange={(editor, data, value) => {
             if (!props.note.text && initial) {
               initial = false;
