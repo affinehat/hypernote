@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import App from './App.js'
 import store from './store'
 import './css/tailwind.css'
+import './css/hyper.css'
 
 ReactDOM.render(
   <React.StrictMode>

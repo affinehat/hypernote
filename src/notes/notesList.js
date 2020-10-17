@@ -15,29 +15,31 @@ export const NotesList = props => {
     <>
       <List>
         {props.notes.map(n => (
-          <React.Fragment key={n.id}>
+          <div key={n.id} className="grid grid-cols-3 mb-2 ml-2">
             {!n.editing ? (
-              <div className="grid grid-cols-2">
+              <>
                 <Note>{n.title}</Note>
                   {/* renders in reverse order */}
-                <span>
+                <span class="col-start-3">
                   <CreateNoteButton at={n.id} pull="right"></CreateNoteButton>
                   <EditNoteButton at={n.id} pull="right">></EditNoteButton>
                   <EditTitleButton at={n.id} pull="right">></EditTitleButton>
                   <DeleteNoteButton at={n.id} pull="right">></DeleteNoteButton>
                 </span>
-              </div>
+              </>
             ) : (
               <>
                 <Input onChange={props.updateTitle} at={n.id}/>
-                <EditTitleButton at={n.id} pull="right"></EditTitleButton>
+                <span class="col-start-3">
+                  <EditTitleButton at={n.id} pull="right"></EditTitleButton>
+                </span>
               </>
             )}
-          </React.Fragment>
+          </div>
         ))}
       </List>
 
-      <CreateNoteButton></CreateNoteButton>
+      <CreateNoteButton className="ml-2"></CreateNoteButton>
     </>
   )
 }

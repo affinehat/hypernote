@@ -5,7 +5,9 @@ export const Input = props => {
   const changeAt = (e) => onChange({id: at, value: e.target.value})
 
   return (
-    <input type="text" onChange={changeAt} className="bg-blue-500"></input>
+    <input autoFocus type="text"
+      onChange={changeAt}
+      className="rounded-sm bg-blue-600" />
   )
 }
 

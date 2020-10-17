@@ -43,8 +43,8 @@ export const NoteEditor = props => {
 
   return (
     <div className="grid grid-cols-2">
-      <div id="editor-panel">
-        <CodeMirror className="min-h-screen"
+      <div id="editor-panel" className="border-4 border-red-300 rounded-lg">
+        <CodeMirror className="min-h-screen w-full"
           value={text}
           onBeforeChange={(editor, data, value) => {
             if (!props.note.text && initial) {
@@ -58,7 +58,7 @@ export const NoteEditor = props => {
           }}
         />
       </div>
-      <div id="result-panel" className="bg-white">
+      <div id="result-panel" className="bg-white border-4 border-blue-300 rounded-lg">
         <Frame className="min-h-screen min-w-full" head={
           <link type='text/css' rel='stylesheet'
             href='https://www.gitcdn.xyz/repo/markdowncss/splendor/master/css/splendor.min.css' />

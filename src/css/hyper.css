@@ -1,0 +1,12 @@
+#title {
+  color: white !important;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  text-shadow: 3px 0px 5px violet, -3px 0px 5px violet,
+               0px 3px 4px aqua, 0px -3px 4px aqua,
+               0px 0px 25px blue, 0px 0px 30px violet;
+}
+
+.cm-s-default {
+  @apply min-h-screen;
+}
