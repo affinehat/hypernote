@@ -19,6 +19,28 @@ export const NoteEditor = props => {
   const text = props.note.text || initialSource;
   let initial = true;
 
+  const transclusionFilter = (text, seen) => {
+    const matches = [...text.matchAll(/^!@include(.*)$/gm)]
+      .map(m => [m[0], m[1].replace(/"/g, '').trim()])
+    if (!matches.length) { return text }
+
+    let titles = {}
+    Object.values(props.notes).forEach(n => {
+      titles[n.title] = n
+    })
+
+    matches.forEach(m => {
+      if (seen[m[1]]) {
+        text = text.replace(m[0], '')
+      }
+      if (titles[m[1]] && !seen[m[1]]) {
+        seen[m[1]] = true
+        text = text.replace(m[0], transclusionFilter(titles[m[1]].text, seen))
+      }
+    })
+    return text
+  }
+
   return (
     <div className="grid grid-cols-2">
       <div id="editor-panel">
@@ -42,7 +64,7 @@ export const NoteEditor = props => {
             href='https://www.gitcdn.xyz/repo/markdowncss/splendor/master/css/splendor.min.css' />
         }>
           <ReactMarkdown
-            source={text}
+            source={transclusionFilter(text, {[props.note.title]: true})}
             escapeHtml={false}
             linkTarget="_blank" />
         </Frame>
@@ -56,6 +78,7 @@ const mapDispatch = { editNote }
 const mapState = (state, {match}) => {
   const id = match.params.id
   return {
+    notes: state.notes,
     note: state.notes[id]
   }
 }
