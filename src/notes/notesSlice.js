@@ -15,8 +15,9 @@ const notesSlice = createSlice({
       }
     },
     deleteNote: (state, action) => void (delete state[action.payload]),
+    editNote: (state, action) => void (state[action.payload.id].text = action.payload.value),
   },
 })
 
 export default notesSlice.reducer
-export const { createNote, deleteNote } = notesSlice.actions
+export const { createNote, deleteNote, editNote } = notesSlice.actions
