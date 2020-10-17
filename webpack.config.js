@@ -6,7 +6,7 @@ const root = path.resolve(__dirname)
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -30,8 +30,8 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new ReactRefreshWebpackPlugin(),
+  //  new webpack.HotModuleReplacementPlugin(),
+  //  new ReactRefreshWebpackPlugin(),
   ],
   resolve: {
     extensions: ['*', '.js', '.jsx'],
@@ -48,10 +48,10 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/assets/',
+    publicPath: '/dist/',
     filename: 'bundle.js',
   },
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
   devServer: {
     port: 3000,
     contentBase: path.resolve(__dirname, 'public'),
